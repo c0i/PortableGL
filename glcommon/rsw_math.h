@@ -41,6 +41,11 @@ typedef int64_t  i64;
 namespace rsw
 {
 
+inline float rand_float(float min, float max)
+{
+	return ((float)rand() / (float)(RAND_MAX - 1)) * (max - min) + min;
+}
+
 // returns [0,1)
 inline float randf()
 {

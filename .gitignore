@@ -73,3 +73,5 @@ examples/build/.vs/
 examples/build/
 demos/bin/
 demos/build/
+testing/bin/
+testing/build/
