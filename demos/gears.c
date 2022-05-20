@@ -53,8 +53,11 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+
+#ifndef _WIN32
 #include <sys/time.h>
 #include <unistd.h>
+#endif
 
 #define PORTABLEGL_IMPLEMENTATION
 #include "portablegl.h"

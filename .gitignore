@@ -67,3 +67,9 @@ testing/perf_tests
 testing/test_output/*
 !testing/test_output/emptyfile
 
+examples/.vs/
+examples/bin/
+examples/build/.vs/
+examples/build/
+demos/bin/
+demos/build/

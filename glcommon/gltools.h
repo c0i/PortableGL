@@ -11,6 +11,9 @@
 #include <stdio.h>
 #include <math.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 //general
 void check_errors(int n, const char* str);
@@ -54,5 +57,9 @@ GLboolean load_texture2D(const char* filename, GLenum min_filter, GLenum mag_fil
 int load_texture2D_array_gif(const char* filename, GLenum min_filter, GLenum mag_filter, GLenum wrap_mode);
 GLboolean load_texture_rect(const char* filename, GLenum min_filter, GLenum mag_filter, GLenum wrap_mode, GLboolean flip);
 GLboolean load_texture_cubemap(const char* filename[], GLenum min_filter, GLenum mag_filter, GLboolean flip);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif
